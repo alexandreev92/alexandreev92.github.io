@@ -182,7 +182,7 @@ a {
 }
 
 .list-places {
-  height: 60vh;
+  height: 55vh;
   overflow: auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -237,7 +237,9 @@ a {
 .footer {
   width: 100%;
   height: 50px;
-/*   position: fixed; */
+  position: fixed;
+  right: 0;
+  left: 0;
   bottom: 0;
   background-color: #575352;
   -webkit-box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.5);
