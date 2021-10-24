@@ -182,11 +182,10 @@ a {
 }
 
 .list-places {
-  height: 55vh;
+  height: 60vh;
   overflow: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin-bottom: 12px;
 }
 
 .list-places__inner {
