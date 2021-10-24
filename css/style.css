@@ -112,11 +112,11 @@ a {
   background-color: #26252A;
 }
 
-.string__hamburger--active {
+.string__hamburger:active {
   background-color: #FFD339;
 }
 
-.string__hamburger .string__hamburger--active {
+.string__hamburger.string__hamburger--active {
   background-color: #FFD339;
 }
 
