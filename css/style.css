@@ -116,14 +116,14 @@ a {
   background-color: #FFD339;
 }
 
-.string__hamburger.string__hamburger--active {
-  background-color: #FFD339;
-}
-
 .string__img {
   height: 11px;
   width: 16.5px;
   margin: -1px auto;
+}
+
+.string__hamburger.string__hamburger--active {
+  background-color: #FFD339;
 }
 
 .logo-main {
