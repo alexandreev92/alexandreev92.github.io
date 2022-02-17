@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     btnmain.forEach(item => {
         item.addEventListener('click', () => {
-            btnmain.classList.toggleClass('active');
+            btnmain.classList.toggle('active');
         })
     })
 
