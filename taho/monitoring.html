@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТАХОСФЕРА</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://use.fontawesome.com/fcef79b3ef.js"></script>
+</head>
+<body>
+    <div class="contacts-up">
+        <div class="container">
+            <div class="contacts-up__inner">
+                <div class="town">
+                    <div class="town__adress">
+                        <a class="town__name" href="#">Липецк</a>
+                        <div class="town__street">ул. Ангарская 24</div>
+                    </div>
+                    <div class="town__numbers">
+                        <a class="town__tel" href="">8-4742-37-63-00</a>
+                        <a class="town__tel" href="">8-903-699-63-00</a>
+                        <a class="town__tel" href="">8-904-687-39-92</a>
+                        <a class="town__numbers_email" href="">Эл.почта: 89046873992@mail.ru</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="brand">
+                        <div class="logo">
+                            <a class="logo__link" href="index.html">
+                                <img class="logo__link-img" src="images/Logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="header__official">
+                            <div class="header__title">
+                                ООО ТАХОСФЕРА
+                            </div>
+                            <div class="header__descr">
+                                Тахографы, карты водителя в Липецке
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <div class="call">
+                            <button data-modal="consultation" class="call__btn"></button>
+                            <a class="check-btn" href="#">Проверить мастерскую</a>
+                            <button data-modal="consultation" class="call__btn2" href="#">заказать звонок</button>    
+                        </div>
+                        <button class="menu__btn"></button>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <button class="menu__item-btn">Выбрать город <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                    <div class="menu__item-slide" id="sub-menu2__slide">
+                        <ul class="sub-menu" id="cities">
+                            <li class="sub-menu__item"><a class="menu__link" href="index.html">Липецк</a></li>
+                            <li class="sub-menu__item"><a class="menu__link" href="#">Воронеж</a></li>
+                        </ul>
+                    </div>
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> <span>На главную</span></a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="ustanovka-tah.html">Установка тахографов</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="cards.html">Изготовление карт</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="monitoring.html">Мониторинг транспорта</a>
+                    </li>
+                    <button class="menu__item-btn" id="menu__item-btn">Доп. услуги <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                    <div class="menu__item-slide">
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item"><a class="menu__link" href="skzi.html">Замена блока СКЗИ (НКМ)</a></li> 
+                            <li class="sub-menu__item"><a class="menu__link" href="paper.html">Бумага для тахографа</a></li>
+                            <li class="sub-menu__item"><a class="menu__link" href="izm-constr.html">Внесение изменений в конструкцию</a></li>
+                            <li class="sub-menu__item"><a class="menu__link" href="diagnostic.html">Диагностика тахографов</a></li>
+                            <li class="sub-menu__item"><a class="menu__link" href="speed.html">Датчики скорости</a></li>
+                            <li class="sub-menu__item"><a class="menu__link" href="akb.html">Главный выключатель АКБ</a></li>
+                            <li class="sub-menu__item"><a class="menu__link" href="toplivo.html">Контроль расхода топлива</a></li>
+                        </ul>
+                    </div>
+                    <button class="menu__item-btn" id="sub-menu2__btn">Ошибки тахографа <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                    <div class="menu__item-slide" id="sub-menu2">
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item"><a class="menu__link" href="">Ошибки тахографа DTCO 1383</a></li>
+                            <li class="sub-menu__item"><a class="menu__link" href="">Ошибки тахографа DTCO 3283</a></li>
+                        </ul>
+                    </div>
+                    <li class="menu__item">
+                        <a class="menu__link" href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="about.html">О компании</a>
+                    </li>
+                </ul>
+                
+            </nav>
+    </header>
+<div class="content">
+    <div class="teaser">
+        <h2 class="teaser__title">Хотите знать<br>где Ваш автомобиль?</h2>
+        <button data-modal="consultation" class="call__btn2" id="show" href="#">Заказать консультацию</button> 
+    </div>
+    <div class="container2">
+        <div class="monitoring">
+            <h1 class="content__title">Мониторинг транспорта</h1>
+            <h2 class="content__subtitle">Сократите затраты на автопарк до 30% используя ГЛОНАСС/GPS технологии с пожизненной гарантией!</h2>
+            <p>Удобное решение для ГЛОНАСС/GPS мониторинга транспорта, которое каждый день используют сотни тысяч компаний. Контроль всех перемещений, мест стоянок, превышений скорости, расхода топлива, качества вождения и многое другое. Всё это с любого устройства, имеющего выход в интернет.</p>
+            <p>Компания «ТАХОСФЕРА» устанавливает оборудование ГЛОНАСС/GPS мониторинга транспорта в Воронеже, Липецке и предоставляет доступ к сервисам и системам мониторинга.
+            </p>
+            <p>Мы находимся:<br> 
+                <span>г. Липецк, ул. Ангарская, 24<span></p>
+        </div>
+    </div>
+    <div class="container">
+        <img class="content__img" src="images/tracking.jpeg" alt="GPS Glonass">
+
+    </div>
+</div>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <div class="logo">
+                        <a class="logo__link" href="#">
+                            <img class="logo__link-img" src="images/Logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header__official">
+                        <div class="header__title">
+                            ООО ТАХОСФЕРА
+                        </div>
+                        <div class="header__descr">
+                            Тахографы, карты водителя в Липецке
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__wrapper">
+                    <div class="footer__list">
+                        <h3>Услуги</h3>
+                        <ul class="footer__list-item">
+                            <a class="footer__link" href="ustanovka-tah.html">Установка тахографов</a>
+                        </ul>
+                        <ul class="footer__list-item">
+                            <a class="footer__link" href="cards.html">Изготовление карт тахографа</a>
+                        </ul>
+                        <ul class="footer__list-item">
+                            <a class="footer__link" href="monitoring.html">Мониторинг транспорта</a>
+                        </ul>
+                        <ul class="footer__list-item">
+                            <a class="footer__link" href="skzi.html">Замена блока СКЗИ</a>
+                        </ul>
+                        <ul class="footer__list-item">
+                            <a class="footer__link" href="diagnostic.html">Диагностика тахографов</a>
+                        </ul>
+                        <ul class="footer__list-item">
+                            <a class="footer__link" href="izm-constr.html">Внесение изменений в конструкцию</a>
+                        </ul>
+                        <ul class="footer__list-item">
+                            <a class="footer__link" href="speed.html">Контроль скорости</a>
+                        </ul>
+                        <ul class="footer__list-item">
+                            <a class="footer__link" href="akb.html">Главный выключатель АКБ</a>
+                        </ul>
+                        <ul class="footer__list-item">
+                            <a class="footer__link" href="toplivo.html">Контроль расхода топлива</a>
+                        </ul>
+                        <div>
+                            <span></span>
+                        </div>
+                        <div class="footer__about">
+                            <ul class="footer__list-item">
+                                <a class="footer__link" href="about.html">О компании</a>
+                            </ul>
+                            <ul class="footer__list-item">
+                                <a class="footer__link" href="contacts.html">Контакты</a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__wrapper2">
+                        <div class="time-job">
+                            <h3>Режим работы</h3>
+                            <div class="time-job__inner">
+                                <div class="time-job__item">
+                                    <div>Понедельник:</div>
+                                    <div>9:00 - 17:00</div>
+                                </div>
+                                <div class="time-job__item">
+                                    <div>Вторник:</div>
+                                    <div>9:00 - 17:00</div>
+                                </div>
+                                <div class="time-job__item">
+                                    <div>Среда:</div>
+                                    <div>9:00 - 17:00</div>
+                                </div>
+                                <div class="time-job__item">
+                                    <div>Четверг:</div>
+                                    <div>9:00 - 17:00</div>
+                                </div>
+                                <div class="time-job__item">
+                                    <div>Пятница:</div>
+                                    <div>9:00 - 16:00</div>
+                                </div>
+                                <div class="time-job__item">
+                                    <div>Суббота:</div>
+                                    <div>по предварительной</div>
+                                </div>
+                                <div class="time-job__item">
+                                    <div>Воскресенье:</div>
+                                    <div>записи</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="town__numbers show">
+                            <a class="town__tel" href="tel:84742376300">8-4742-37-63-00</a>
+                            <a class="town__tel" href="tel:89036996300">8-903-699-63-00</a>
+                            <a class="town__tel" href="tel:89046873992">8-904-687-39-92</a>
+                            <a class="town__numbers_email" href="">Эл.почта: 89046873992@mail.ru</a>
+                        </div>
+                        <a class="check-btn show" href="#">Проверить мастерскую</a>
+                    </div>
+                </div>
+                <div class="info-company">
+                    <div class="info-company__inner">
+                        ООО "ТАХОСФЕРА" 
+                        ИНН 4813028881
+                        ОГРН 1184827004449
+                    </div>
+                </div>
+                <a class="upbutton" href="#">Наверх</a>
+    
+    
+            </div>
+        </div>
+</footer>
+    
+    <div class="overlay">
+        <div class="modal">
+            <div class="modal__close">&times;</div>
+            <div class="town__numbers town__numbers-modal">
+                <a class="town__tel" href="tel:84742376300">8-4742-37-63-00</a>
+                <a class="town__tel" href="tel:89036996300">8-903-699-63-00</a>
+                <a class="town__tel" href="tel:89046873992">8-904-687-39-92</a>
+                <a class="town__numbers_email town__numbers_email-modal" href="">Эл.почта: 89046873992@mail.ru</a>
+            </div>
+            <form class='feed-form' action="#">
+                <input name="name" required placeholder="Как к вам обращаться?" type="text">
+                <input name="phone" required placeholder="Как с вами связаться?" type="tel">
+                <textarea style="resize: none" name="message" required placeholder="Сообщение" maxlength="300" type="text"></textarea>
+    
+                <button class="call__btn2 call__btn2-modal">Отправить</button>
+            </form>
+        </div>
+    </div>
+    
+    
+        <script src= "js/main.min.js"></script>
+    </body>
+    </html>
