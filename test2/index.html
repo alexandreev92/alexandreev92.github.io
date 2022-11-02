@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Места | Всегда есть что посетить</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div id="start"></div>
+    <div id="auth"></div>
+    <div id="counter"></div>
+
+    <div class="container">        
+        <div id="places"></div>
+    </div>
+
+<!-- <div class="container">
+
+    <div class="buttons-wrap">
+        <button class="btn" id="checkBtn" href="">Колонка</button>
+        <button class="btn" id="resetBtn" href="" onclick="openModal()">Сбросить</button>
+    </div>
+</div> -->
+
+
+<div class="overlay">
+    <div class="modal-container">
+        <div class="modal">
+            <div class="modal__title">Вы действительно хотите сброcить результаты?</div>
+            <div class="modal__subtitle">Их нельзя будет восстановить!</div>
+            <div class="modal__btn-wrapper">
+                <button class="btn" id="cancel" onclick="closeModal()">Отмена</button>
+                <button class="btn" onclick="clearLocalStorage()">Сбросить</button>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <!-- Constatns and Utils -->
+    <script src="constants/catalog.js"></script>
+    <script src="constants/root.js"></script>
+    <script src="utils/localStorageUtil.js"></script>
+
+
+    <!-- Компонент СЧЁТЧИК -->
+    <script src="components/Counter/counter.js"></script>
+    <link rel="stylesheet" href="css/counter.css">
+
+    <!-- Компонент КАТАЛОГ МЕСТ -->
+    <script src="components/Places/places.js"></script>
+    <link rel="stylesheet" href="css/places.css">
+
+    <!-- Компонент окно авторизации -->
+    <script src="components/Auth/auth.js"></script>
+    <link rel="stylesheet" href="css/auth.css">
+
+
+    <!-- Компонент START -->
+    <script src="components/Start/start.js"></script>
+    <link rel="stylesheet" href="css/start.css">
+    <!-- <script src="main.js"></script> -->
+</body>
+</html>
