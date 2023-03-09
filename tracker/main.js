@@ -14,7 +14,7 @@ if (!navigator.geolocation) {
 
     setInterval(() => {
         navigator.geolocation.getCurrentPosition(getPosition)
-    }, 2000)
+    }, 500)
 }
 
 let marker, circle;
