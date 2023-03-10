@@ -1,5 +1,5 @@
 // Инициализация карты
-let map = L.map('map').setView([52.584857, 39.519043], 10);
+let map = L.map('map').setView([52.584857, 39.519043], 15);
 
 // OSM Слой
 let osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -42,7 +42,7 @@ function getPosition(position){
     let featureGroup = L.featureGroup([marker, circle]).addTo(map)
 
     // Центрируем карту на выбранной группе маркера с кругом
-    map.fitBounds(featureGroup.getBounds())
+    //map.fitBounds(featureGroup.getBounds())
 
 
     console.log("Ваши координаты: Широта: "+ lat +" Долгота: "+ long +" Точность: " + accuracy);
