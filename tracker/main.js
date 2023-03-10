@@ -89,7 +89,10 @@ function getPosition(position){
     let featureGroup = L.featureGroup([marker, circle]).addTo(map)
 
     // Центрируем карту на выбранной группе маркера с кругом
-    //map.fitBounds(featureGroup.getBounds())
+    marker.on('click', ()=>{
+        map.fitBounds(featureGroup.getBounds());
+
+    })
 
 
     console.log("Ваши координаты: Широта: "+ lat +" Долгота: "+ long +" Точность: " + accuracy);
