@@ -105,6 +105,6 @@ function getPosition(position){
     })
 	
 accuracyView.innerHTML = "Точность: " + accuracy.toFixed(2) +"м";
-    console.log("Ваши координаты: Широта: "+ lat +" Долгота: "+ long +" Точность: " + accuracy);
+    console.log("Ваши координаты: Широта: "+ lat +" Долгота: "+ long +" Точность: " + accuracy.toFixed(2));
 
 }
