@@ -1,3 +1,5 @@
+let accuracyView = document.querySelector('.accuracy')
+
 // Инициализация карты
 let map = L.map('map').setView([0, 0], 1);
 
