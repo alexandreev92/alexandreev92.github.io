@@ -3,7 +3,7 @@ let map = L.map('map').setView([52.584857, 39.519043], 10);
 
 // OSM Слой
 let osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: "Andreev's Development, 2023"
+    //attribution: "Andreev's Development, 2023"
 });
 osm.addTo(map);
 
