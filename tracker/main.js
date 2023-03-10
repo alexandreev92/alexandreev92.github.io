@@ -17,7 +17,7 @@ let voyagerMap = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voya
 
 
 //google map
-let googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',{
+let googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=s,s&x={x}&y={y}&z={z}',{
     maxZoom: 20,
     subdomains:['mt0','mt1','mt2','mt3']
 });
