@@ -7,6 +7,31 @@ let osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 });
 osm.addTo(map);
 
+// Лесная карта
+let voyagerMap = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+	subdomains: 'abcd',
+	maxZoom: 20
+});
+// voyagerMap.addTo(map)
+
+
+//google map
+let googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',{
+    maxZoom: 20,
+    subdomains:['mt0','mt1','mt2','mt3']
+});
+// googleStreets.addTo(map)
+
+// let other = L.layerGroup([lg_units, tr_places, cs_places]).addTo(map)
+
+let Basemaps = {
+        "OSM": osm,
+        "Voyager": voyagerMap,
+        "Google": googleStreets
+    }
+L.control.layers(Basemaps).addTo(map);
+
 if (!navigator.geolocation) {
     console.log('Ваш браузер не поддерживает геолокацию')
 } else {
