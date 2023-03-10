@@ -13,12 +13,11 @@ body {
   position: absolute;
   top: 10px;
   left: 55px;
-  height: 30px;
-  width: -moz-fit-content;
+  height: fit-content;
   width: fit-content;
   background-color: white;
-  color: #373333;
+  color:#373333;
   z-index: 1000;
-  font-size: 25px;
-  padding: 0 5px;
+  font-size: 20px;
+  // padding: 0 5px;
 }/*# sourceMappingURL=style.css.map */
