@@ -101,8 +101,8 @@ function getPosition(position){
         map.fitBounds(featureGroup.getBounds());
 
     })
-
-
+	
+accuracyView.innerHTML = "Точность: " + accuracy.toFixed(2) +"м";
     console.log("Ваши координаты: Широта: "+ lat +" Долгота: "+ long +" Точность: " + accuracy);
 
 }
