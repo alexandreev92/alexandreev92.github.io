@@ -1,5 +1,5 @@
 // Инициализация карты
-let map = L.map('map').setView([52.584857, 39.519043], 15);
+let map = L.map('map').setView([0, 0], 1);
 
 // OSM Слой
 let osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
