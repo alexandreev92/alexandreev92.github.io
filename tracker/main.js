@@ -58,6 +58,14 @@ if (!navigator.geolocation) {
     console.log('Ваш браузер не поддерживает геолокацию')
 } else {
 
+    var options = {
+        enableHighAccuracy: true,
+        
+      };
+
+    function error(err) {
+        console.warn(`ERROR(${err.code}): ${err.message}`);
+      };
 
     setInterval(() => {
         navigator.geolocation.getCurrentPosition(getPosition)
