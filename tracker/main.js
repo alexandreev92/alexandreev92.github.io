@@ -3,6 +3,9 @@ let accuracyView = document.querySelector('.accuracy')
 // Инициализация карты
 let map = L.map('map').setView([0, 0], 1);
 
+// Инициализация Location
+L.control.locate().addTo(map);
+
 // OSM Слой
 let osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     //attribution: "Andreev's Development, 2023"
