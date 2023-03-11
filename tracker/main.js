@@ -99,7 +99,7 @@ function getPosition(position){
     circle = L.circle([lat, long], {radius: accuracy})
     
     // Объединяем их в одну группу и добавляем на карту 
-    let featureGroup = L.featureGroup([marker, circle])
+    let featureGroup = L.featureGroup([marker, circle]).addTo(map)
 
     // Центрируем карту на выбранной группе маркера с кругом
     marker.on('click', ()=>{
