@@ -59,55 +59,55 @@ let Basemaps = {
     }
 L.control.layers(Basemaps).addTo(map);
 
-if (!navigator.geolocation) {
-    console.log('Ваш браузер не поддерживает геолокацию')
-} else {
+// if (!navigator.geolocation) {
+//     console.log('Ваш браузер не поддерживает геолокацию')
+// } else {
 
-    var options = {
-        enableHighAccuracy: true,
+//     var options = {
+//         enableHighAccuracy: true,
         
-      };
+//       };
 
-    function error(err) {
-        console.warn(`ERROR(${err.code}): ${err.message}`);
-      };
+//     function error(err) {
+//         console.warn(`ERROR(${err.code}): ${err.message}`);
+//       };
 
-    setInterval(() => {
-        navigator.geolocation.getCurrentPosition(getPosition)
-    }, 500)
-}
+//     setInterval(() => {
+//         navigator.geolocation.getCurrentPosition(getPosition)
+//     }, 500)
+// }
 
-let marker, circle;
+// let marker, circle;
 
-function getPosition(position){
-    // console.log(position);
-    // Получили и записали в переменные Широту, Долготу, Точность
-    let lat = position.coords.latitude;
-    let long = position.coords.longitude;
-    let accuracy = position.coords.accuracy
+// function getPosition(position){
+//     // console.log(position);
+//     // Получили и записали в переменные Широту, Долготу, Точность
+//     let lat = position.coords.latitude;
+//     let long = position.coords.longitude;
+//     let accuracy = position.coords.accuracy
     
-    if (marker) {
-        map.removeLayer(marker)
-    }
+//     if (marker) {
+//         map.removeLayer(marker)
+//     }
 
-    if (circle) {
-        map.removeLayer(circle)
-    }
+//     if (circle) {
+//         map.removeLayer(circle)
+//     }
 
-   // Создаём маркер геопозиции и добавляем круг с радиусом точности
-    marker = L.marker([lat, long])
-    circle = L.circle([lat, long], {radius: accuracy})
+//    // Создаём маркер геопозиции и добавляем круг с радиусом точности
+//     marker = L.marker([lat, long])
+//     circle = L.circle([lat, long], {radius: accuracy})
     
-    // Объединяем их в одну группу и добавляем на карту 
-    let featureGroup = L.featureGroup([marker, circle])
+//     // Объединяем их в одну группу и добавляем на карту 
+//     let featureGroup = L.featureGroup([marker, circle])
 
-    // Центрируем карту на выбранной группе маркера с кругом
-    marker.on('click', ()=>{
-        map.fitBounds(featureGroup.getBounds());
+//     // Центрируем карту на выбранной группе маркера с кругом
+//     marker.on('click', ()=>{
+//         map.fitBounds(featureGroup.getBounds());
 
-    })
+//     })
 	
-accuracyView.innerHTML = "Точность: " + accuracy.toFixed(2) +"м";
-    console.log("Ваши координаты: Широта: "+ lat +" Долгота: "+ long +" Точность: " + accuracy.toFixed(2));
+// accuracyView.innerHTML = "Точность: " + accuracy.toFixed(2) +"м";
+//     console.log("Ваши координаты: Широта: "+ lat +" Долгота: "+ long +" Точность: " + accuracy.toFixed(2));
 
 }
